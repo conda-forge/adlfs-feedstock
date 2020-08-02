@@ -5,7 +5,7 @@ Home: https://github.com/dask/adlfs
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: fsspec-compatible Azure Datalake and Azure Blob Storage access
 
