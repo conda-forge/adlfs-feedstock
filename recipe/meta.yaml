@@ -9,7 +9,7 @@ source:
   sha256: 8a8518f771c5c9684f39206a764d50fd15991ad46e6703ebe2a36ca3c115fb54
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -29,6 +29,10 @@ requirements:
 test:
   imports:
     - adlfs
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/dask/adlfs
