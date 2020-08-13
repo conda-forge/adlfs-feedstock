@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/adlfs/adlfs-{{ version }}.tar.gz
-  sha256: 8a8518f771c5c9684f39206a764d50fd15991ad46e6703ebe2a36ca3c115fb54
+  sha256: d6b12231899f34e82b67bb87954a4f24246a6a6f28b6a60b9e5cd8205b735c58
 
 build:
   number: 0
