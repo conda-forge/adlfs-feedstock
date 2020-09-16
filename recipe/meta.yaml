@@ -27,7 +27,7 @@ requirements:
     - fsspec >=0.8.0  
     - msrestazure
     - pytest >=5.0,<6.0
-    - requests>=2.22.0,<3.0
+    - requests >=2.22.0,<3.0
 
 test:
   imports:
