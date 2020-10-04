@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.5.4" %}
 
 package:
   name: adlfs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/adlfs/adlfs-{{ version }}.tar.gz
-  sha256: baac0cfd9a19b7ea1c3e3fdabbc8446eb2586e25ed7456d1ca19758f202185a5
+  sha256: 0beb075f66b882d305f5b02415afa1a8e4fef1449a4d75b8be41aaa1079f5a6a
 
 build:
   number: 0
@@ -19,12 +19,12 @@ requirements:
     - pip
   run:
     - python >=3
-    - aiohttp  
+    - aiohttp
     - azure-core >=1.5.0
     - azure-datalake-store >=0.0.46,<0.1
     - azure-identity
     - azure-storage-blob >=12.5.0
-    - fsspec >=0.8.0  
+    - fsspec >=0.8.0
     - msrestazure
     - pytest >=5.0,<6.0
     - requests >=2.22.0,<3.0
