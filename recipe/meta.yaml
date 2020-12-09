@@ -1,4 +1,4 @@
-{% set version = "0.5.7" %}
+{% set version = "0.5.8" %}
 
 package:
   name: adlfs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/adlfs/adlfs-{{ version }}.tar.gz
-  sha256: 47e44c830f81e8c4e30040264cdaed191af6f232074063e7af3c3e6d03872edf
+  sha256: dc9f236b00335afbb5b69c2ea9de9064d9dfd776ce557d9d99aa9d488a5f9f5c
 
 build:
   number: 0
