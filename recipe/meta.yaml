@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >3.6
     - pip
   run:
-    - python >=3
+    - python >3.6
     - aiohttp
     - azure-core >=1.5.0
     - azure-datalake-store >=0.0.46,<0.1
@@ -46,4 +46,5 @@ extra:
   recipe-maintainers:
     - hayesgb
     - martindurant
+    - TomAugspurger
     - raybellwaves
