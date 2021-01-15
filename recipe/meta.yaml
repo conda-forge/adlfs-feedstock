@@ -1,4 +1,4 @@
-{% set version = "0.5.9" %}
+{% set version = "0.6.0" %}
 
 package:
   name: adlfs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/adlfs/adlfs-{{ version }}.tar.gz
-  sha256: 674a6147a61aeedb2335430b8cd404c923f568f2d374f821ea39510ae1710d98
+  sha256: 14f9bed087aabf3d7a3cbab6cd94671a99ae97868177c9e88b1aa494e9538b26
 
 build:
   number: 0
@@ -15,15 +15,15 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >3.6
     - pip
   run:
-    - python >=3
+    - python >3.6
     - aiohttp
     - azure-core >=1.5.0
     - azure-datalake-store >=0.0.46,<0.1
     - azure-identity
-    - azure-storage-blob >=12.5.0
+    - azure-storage-blob >=12.5.0,<12.7.0
     - fsspec >=0.8.2
     - msrestazure
     - requests >=2.22.0,<3.0
@@ -46,4 +46,5 @@ extra:
   recipe-maintainers:
     - hayesgb
     - martindurant
+    - TomAugspurger
     - raybellwaves
