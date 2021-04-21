@@ -9,7 +9,7 @@ source:
   sha256: cbd4f61074f85447ba55e94a4c612ab9db9e057c92e6581ec0ec4ef6452a90fa
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -23,7 +23,7 @@ requirements:
     - azure-core >=1.5.0
     - azure-datalake-store >=0.0.46,<0.1
     - azure-identity
-    - azure-storage-blob >=12.5.0,<12.7.0
+    - azure-storage-blob >=12.5.0
     - fsspec >=0.8.2
     - msrestazure
     - requests >=2.22.0,<3.0
@@ -48,3 +48,4 @@ extra:
     - martindurant
     - TomAugspurger
     - raybellwaves
+    - dhirschfeld

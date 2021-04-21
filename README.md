@@ -116,6 +116,7 @@ Feedstock Maintainers
 =====================
 
 * [@TomAugspurger](https://github.com/TomAugspurger/)
+* [@dhirschfeld](https://github.com/dhirschfeld/)
 * [@hayesgb](https://github.com/hayesgb/)
 * [@martindurant](https://github.com/martindurant/)
 * [@raybellwaves](https://github.com/raybellwaves/)
