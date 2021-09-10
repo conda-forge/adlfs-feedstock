@@ -1,4 +1,4 @@
-{% set version = "2021.7.1" %}
+{% set version = "2021.9.1" %}
 
 package:
   name: adlfs
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/adlfs/adlfs-{{ version }}.tar.gz
-  sha256: d544b6afffb4fbbd895dc3a4060d9da59bfaf37387c7e6796418f6306fe2bd6e
+  sha256: 0d9cae55be36b937d1dc6e803b83dcb415ea887279dd7757b040b4f1a39b65ea
 
 build:
   number: 0
@@ -29,10 +29,6 @@ requirements:
 test:
   imports:
     - adlfs
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: https://github.com/dask/adlfs
