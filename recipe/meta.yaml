@@ -9,7 +9,7 @@ source:
   sha256: 8543d29ce5b994d49831ad5f86b76b90809a540302b4f24e027591b740127942
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -24,7 +24,7 @@ requirements:
     - azure-datalake-store >=0.0.46,<0.1
     - azure-identity
     - azure-storage-blob >=12.5.0
-    - fsspec >=2021.6.1
+    - fsspec >=2021.10.1
 
 test:
   imports:
