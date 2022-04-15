@@ -1,4 +1,4 @@
-{% set version = "2022.2.0" %}
+{% set version = "2022.4.0" %}
 
 package:
   name: adlfs
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/adlfs/adlfs-{{ version }}.tar.gz
-  sha256: 8543d29ce5b994d49831ad5f86b76b90809a540302b4f24e027591b740127942
+  sha256: 055806592ab5792296def36470eee1067c8ff6e1176bc054a831510e471c3833
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
