@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - aiohttp
+    - aiohttp >=3.7.0
     - azure-core >=1.7.0
     - azure-datalake-store >=0.0.46,<0.1
     - azure-identity
