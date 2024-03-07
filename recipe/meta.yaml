@@ -9,7 +9,7 @@ source:
   sha256: 860f5ddbd7f3c2553d84a101717dc5736e823305e0d51e8c0058bc85a7fa304d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -17,6 +17,12 @@ requirements:
   host:
     - python >=3.8
     - pip
+    # The dependencies below are required to make sure `setuptools_scm` is used to 
+    # dynamically infer the version. Without this, the `pip` version of the package
+    # would appear to be 0.0.0
+    - setuptools >=69
+    - setuptools_scm >=8
+    - toml
   run:
     - python >=3.8
     - aiohttp >=3.7.0
