@@ -5,17 +5,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/adlfs/adlfs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/a/adlfs/adlfs-{{ version }}.tar.gz
   sha256: 106995b91f0eb5e775bcd5957d180d9a14faef3271a063b1f65c66fd5ab05ddf
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     # The dependencies below are required to make sure `setuptools_scm` is used to 
     # dynamically infer the version. Without this, the `pip` version of the package
@@ -24,7 +24,7 @@ requirements:
     - setuptools_scm >=8
     - toml
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - aiohttp >=3.7.0
     - azure-core >=1.23.1,<2.0.0
     - azure-datalake-store >=0.0.46,<0.1
@@ -33,6 +33,8 @@ requirements:
     - fsspec >=2023.12.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - adlfs
 
