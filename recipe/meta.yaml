@@ -27,7 +27,7 @@ requirements:
     - python >={{ python_min }}
     - aiohttp >=3.7.0
     - azure-core >=1.28.0,<2.0.0
-    - azure-datalake-store >=0.0.51,<0.1
+    - azure-datalake-store >=0.0.53,<0.1
     - azure-identity
     - azure-storage-blob >=12.17.0
     - fsspec >=2023.12.0
